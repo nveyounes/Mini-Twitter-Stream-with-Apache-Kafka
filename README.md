@@ -149,3 +149,22 @@ All Java classes can be run directly from your IDE (like IntelliJ or VS Code) or
     ```
 
 ## 📂 Project Structure
+
+```bash
+.
+├── pom.xml                       # Maven configuration and dependencies
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── MongoDBConsumer.java    # (Task 5) Bonus: MongoDB Consumer
+│   │   │   ├── TweetConsumer.java      # (Task 2) Simple Consumer
+│   │   │   ├── TweetCountStream.java   # (Task 4) Stateful Stream (Count)
+│   │   │   ├── TweetFilterStream.java  # (Task 3) Stateless Stream (Filter)
+│   │   │   ├── TweetProducer.java      # (Task 1) Producer
+│   │   │   └── org
+│   │   │       └── example
+│   │   │           └── Main.java       # (Generated Default)
+│   │   └── resources
+│   └── test
+│       └── java
+└── target                            # Compiled output (Auto-generated)
